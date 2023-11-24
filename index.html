@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Take a break dot com</title>
+  <style>
+    /* Add some basic CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 32px;
+    }
+    
+    section {
+      margin: 20px;
+    }
+    
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    label {
+      width: 100%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+    
+    /* Additional funny styling */
+    body {
+      background-color: #FFD700;
+    }
+    
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      padding: 20px;
+      text-shadow: 2px 2px #ff0000;
+    }
+    
+    label {
+      color: #ff00ff;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    
+    input[type="submit"] {
+      background-color: #ff00ff;
+      font-weight: bold;
+      animation: rainbow 2s linear infinite;
+    }
+    
+    @keyframes rainbow {
+      0% { color: red; }
+      25% { color: orange; }
+      50% { color: yellow; }
+      75% { color: green; }
+      100% { color: blue; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Take a break dot com</h1>
+  </header>
+  <section>
+    <h2>Place an Order</h2>
+    <form action="order.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="food">Food:</label>
+      <select id="food" name="food" required>
+        <option value="">Select a food item</option>
+        <option value="hamburger">Hamburger</option>
+        <option value="pizza">Pizza</option>
+        <option value="sushi">Sushi</option>
+      </select>
+      
+      <label for="drink">Drink:</label>
+      <select id="drink" name="drink" required>
+        <option value="">Select a drink item</option>
+        <option value="cola">Cola</option>
+        <option value="lemonade">Lemonade</option>
+        <option value="iced-tea">Iced Tea</option>
+      </select>
+      
+      <label for="additional-info">Additional Information:</label>
+      <textarea id="additional-info" name="additional-info"></textarea>
+      
+      <input type="submit" value="Place Order">
+    </form>
+  </section>
+</body>
+</html>
